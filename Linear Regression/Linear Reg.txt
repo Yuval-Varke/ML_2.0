@@ -1,0 +1,16 @@
+Linear Regression 
+-> Solves Regression problem 
+-> Have to find Best Fit Line
+-> Uses MSE (Mean Squared Error)
+-> Uses Gradient Descent = to reach the global minima point, using convergence theorem
+
+#Evaluation Metrics :- These are the metrics how we measure how good a model is.
+1. Mean Absolute Error (MAE)
+2. Mean Squared Error (MSE)
+3. Root Mean Squared Error (RMSE)
+4. R-squared
+5. Adjusted R-squared
+
+#Feature Engineering :- Transforming, creating, or selecting input variables to make our model perform better.
+-> Encoding Categorical variables
+-> Create Useful derived features
