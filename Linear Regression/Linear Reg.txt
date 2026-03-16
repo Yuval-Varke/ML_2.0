@@ -14,3 +14,6 @@ Linear Regression
 #Feature Engineering :- Transforming, creating, or selecting input variables to make our model perform better.
 -> Encoding Categorical variables
 -> Create Useful derived features
+-> Interaction Features
+-> Scaling Numeric Features
+-> Feature Selection
