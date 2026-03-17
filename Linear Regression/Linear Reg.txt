@@ -21,6 +21,14 @@ drop_first=True :== Solves the 'Dummy Variable trap', multi-collinearity.
 -> Interaction Features - creating features in our dataset which would increase the overall accuracy.
                         like bmi_smoker or age_smoker
 
--> Scaling Numeric Features
+-> Scaling Numeric Features - Normalization and Standardization
 -> Feature Selection
 
+
+#Overfitting - means model is too complex
+training - 95% ---- Low bias (bias means error from wrong assumptions)
+testing - 65% ---- High variance (variance means sensitivity to small data changes)
+
+#Underfitting - means model is too simple
+training - 70% ---- High bias
+testing - 65% ---- Low bias
