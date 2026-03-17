@@ -17,3 +17,6 @@ Linear Regression
 -> Interaction Features
 -> Scaling Numeric Features
 -> Feature Selection
+
+drop_first=True :== Solves the 'Dummy Variable trap', multi-collinearity.
+                    Removes one redundant variable.
