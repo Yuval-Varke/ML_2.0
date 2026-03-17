@@ -13,10 +13,14 @@ Linear Regression
 
 #Feature Engineering :- Transforming, creating, or selecting input variables to make our model perform better.
 -> Encoding Categorical variables
--> Create Useful derived features
--> Interaction Features
--> Scaling Numeric Features
--> Feature Selection
 
 drop_first=True :== Solves the 'Dummy Variable trap', multi-collinearity.
                     Removes one redundant variable.
+
+-> Create Useful derived features
+-> Interaction Features - creating features in our dataset which would increase the overall accuracy.
+                        like bmi_smoker or age_smoker
+
+-> Scaling Numeric Features
+-> Feature Selection
+
