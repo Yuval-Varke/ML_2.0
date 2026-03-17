@@ -32,3 +32,13 @@ testing - 65% ---- High variance (variance means sensitivity to small data chang
 #Underfitting - means model is too simple
 training - 70% ---- High bias
 testing - 65% ---- Low bias
+
+
+Regularization -- helps in generalizing the model
+               -- adds a penalty so that the model does not overfits
+
+1. Lasso Regression (L1)
+Model gets simplified as the number of important features gets reduced
+2. Ridge Regression (L2)
+Prevents overfitting for us as it helps in feature selection
+3. ElasticNet (L1+L2)
