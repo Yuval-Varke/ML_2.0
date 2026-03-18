@@ -7,3 +7,7 @@ Logistic Regression
 Squashing - squashes the values into bounded range [0,1]
 Thus for squashing, we use Sigmoid Activation function
 Now, Values on the best fit line are Probability values
+
+As we want to penalize severe wrong predictions, we use log loss function / Binary cross entropy function.
+J(y_cap,y) = -y.log(y_cap) - (1-y).log(1-y_cap)
+
