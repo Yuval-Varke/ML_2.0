@@ -11,6 +11,16 @@ Now, Values on the best fit line are Probability values
 As we want to penalize severe wrong predictions, we use log loss function / Binary cross entropy function.
 J(y_cap,y) = -y.log(y_cap) - (1-y).log(1-y_cap)
 
+
+@Confusion Matrix
+its a n x n matrix where n is the number of classifications
+
+TP - TRUE Positive
+TN - TRUE NEGATIVE
+FP - FALSE Positive ---- Type 1 error where Actual 0 Predicted 1
+FN - FALSE NEGATIVE ---- Type 2 error where Actual 1 Predicted 0
+
+
 #Evaluation Metrics :- These are the metrics how we measure how good a model is. (Using confusion matrix)
 1. Accuracy - how often is the model correct ?
             - TN + TP / TN + TP + FP + FN
@@ -21,4 +31,15 @@ J(y_cap,y) = -y.log(y_cap) - (1-y).log(1-y_cap)
 4. F1-Score - Harmonic mean
             - 2 * Precision * Recall / Precision + Recall
 
+#Transforming Data  - helps in convergence data in the gradient descent
+-> Normalization (Min-Max Scaling) 
+-- rescales the data and puts them in a particular range
+-- X_scaled = X - X_min / X_max - X_min
+-> Standardization (Z-score Scaling) 
+-- mean of data = 0 && std dev = 1
+-- X_standardized = X - u / sigma
 
+#Standardizing data using sklearn :-
+fit() --- compute the mean and std dev 
+transform() --- uses mean & std dev computed by fit  (used by X_test)
+fit_transform() --- fit to data, then transform it   (used by X_train)
