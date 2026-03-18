@@ -1,0 +1,9 @@
+Logistic Regression
+-> Solves classification problem
+-> Values on the best fit line are not Probability values
+-> htheta(x) < 0 and can be htheta(x) > 1
+-> Outliers might shift the best fit line
+
+Squashing - squashes the values into bounded range [0,1]
+Thus for squashing, we use Sigmoid Activation function
+Now, Values on the best fit line are Probability values
