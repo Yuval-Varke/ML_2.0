@@ -11,3 +11,14 @@ Now, Values on the best fit line are Probability values
 As we want to penalize severe wrong predictions, we use log loss function / Binary cross entropy function.
 J(y_cap,y) = -y.log(y_cap) - (1-y).log(1-y_cap)
 
+#Evaluation Metrics :- These are the metrics how we measure how good a model is. (Using confusion matrix)
+1. Accuracy - how often is the model correct ?
+            - TN + TP / TN + TP + FP + FN
+2. Precision - when the model predicts Positive, how often is it correct ?
+             - TP / TP + FP
+3. Recall (Sensitivity) - how many positives did the model catch
+                        - TP / FN + TP
+4. F1-Score - Harmonic mean
+            - 2 * Precision * Recall / Precision + Recall
+
+
