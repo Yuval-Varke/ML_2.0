@@ -14,3 +14,21 @@ b. Manhattan distance (generally used for grid based problems/ high dimensional 
 -> Sensitive to outliers
 -> Sensitive to feature scaling
 -> Curse of Dimensionality (High Dimensional Data) - Data Sparsity
+
+
+@Validation data - this dataset is a sample of data held back from training your model that is used to 
+give an estimate of model skill while tuning model's hyperparameters.
+
+train model on training set ---> evaluate model on Validation set ---> tweak model according to results on 
+              |                                                                     Validation set
+              |                                                                          |
+              |---------------<-------------------<-------------------------<------------|
+
+
+Cross Validation (used to get the best values for the hyperparameters):-
+-> K-fold CV --- gets k accuracy values for k iterations, at the end mean of all those accuracy score is 
+                finalized.
+             --- if k = cv = 5, then the train dataset will be divided into 5 folds and each iteration/fold
+             is used as a Validation data, we'll be getting diff acc_scores.  
+-> GridSearchCV (by sklearn)
+    
