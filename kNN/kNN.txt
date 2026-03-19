@@ -9,3 +9,8 @@ To calculate Distance :-
 a. Euclidean distance (mostly used)
 b. Manhattan distance (generally used for grid based problems/ high dimensional data)
 
+#Limitation:-
+-> Slow at predictions (not suitable for huge datasets)
+-> Sensitive to outliers
+-> Sensitive to feature scaling
+-> Curse of Dimensionality (High Dimensional Data) - Data Sparsity
