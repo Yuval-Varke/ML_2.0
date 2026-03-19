@@ -1,0 +1,3 @@
+# Naive Bayes:-
+-> It is a probabilistic supervised ML algorithm mainly used for classification tasks.
+-> Uses Bayes Theorem
