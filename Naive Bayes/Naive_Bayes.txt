@@ -1,3 +1,10 @@
 # Naive Bayes:-
 -> It is a probabilistic supervised ML algorithm mainly used for classification tasks.
 -> Uses Bayes Theorem
+
+
+@Types of Naive bayes algorithms:-
+1. Gaussian Naive Bayes - used for datasets having continous values
+2. Multinomial Naive Bayes - used for datasets having discrete values
+3. Bernoulli Naive Bayes - used for datasets having binary values
+4. Etc...
