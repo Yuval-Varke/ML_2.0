@@ -32,3 +32,8 @@ Cross Validation (used to get the best values for the hyperparameters):-
              is used as a Validation data, we'll be getting diff acc_scores.  
 -> GridSearchCV (by sklearn)
     
+
+
+## Pipeline - It allows us to sequentially apply a list of transformers to preprocess the data and, 
+if desired, conclude the sequence with a final predictor for predictive modeling.
+
