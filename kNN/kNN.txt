@@ -1,0 +1,11 @@
+kNN - k Nearest Neighbours
+    - majorly used for classification problems, can also be used for Regression problems.
+    - Always scale data for kNN problems
+1. Choosing k (hyperparameter) / Always odd
+2. Distance of new point from all the k data points
+3. If the problem is classification = majority of k Neighbours is taken
+   Else if the problem is Regression = mean/avg of k Neighbours is taken
+To calculate Distance :- 
+a. Euclidean distance (mostly used)
+b. Manhattan distance (generally used for grid based problems/ high dimensional data)
+
