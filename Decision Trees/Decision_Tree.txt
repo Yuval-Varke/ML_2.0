@@ -14,3 +14,16 @@ If small dataset = Entropy is used, as log is calculated
 If huge dataset = Gini is used, as no large log calculations
 
 Information Gain : IG measure is used to decide which feature to split on.
+[IG = Entropy of parent - Weighted entropy of children node]
+
+Pruning : Pruning is a technique used in DT to remove parts of the tree that are unnecessary,
+in order to reduce overfitting and improve performance on unseen data. (For overfitting)
+1. Pre-Pruning : assigning maxdepth (for small dataset)
+2. Post-Pruning : calculating cost complexity pruning (ccp-alpha) (for large dataset)
+
+@Common Pruning rules:-
+· max_depth - Stop splitting when the tree reaches max depth
+· min_samples_split - node must contain at least N samples to be split
+· min_samples_leaf - leaf must contain at least N samples
+. max_leaf_nodes - Limit total number of leaf nodes.
+· min_impurity_decrease - Only split if impurity reduction exceeds a threshold
