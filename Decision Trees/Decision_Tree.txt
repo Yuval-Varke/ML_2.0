@@ -1,0 +1,16 @@
+#Decision Trees :-
+-> It predicts an outcome by asking a sequence of if-then questions about the input features.
+-> Uses If-else like conditions and generate a tree to predict the outcomes.
+-> Two types of nodes - Pure -- node which gets converges to a class at the end of the tree
+                      - Impure -- node which does not gets converges to a class at the end of the tree
+
+Decisions to make   -> Feature Selection for the split
+                    -> Impurity metrix for Degree of purity of the split :- 
+                            a. Entropy - Measures the impurity, disorder, or uncertainty in a dataset
+                            b. Gini Impurity/Index - Measures the likelihood of a random element being misclassified in a dataset
+
+
+If small dataset = Entropy is used, as log is calculated
+If huge dataset = Gini is used, as no large log calculations
+
+Information Gain : IG measure is used to decide which feature to split on.
