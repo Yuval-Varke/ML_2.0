@@ -27,3 +27,12 @@ in order to reduce overfitting and improve performance on unseen data. (For over
 · min_samples_leaf - leaf must contain at least N samples
 . max_leaf_nodes - Limit total number of leaf nodes.
 · min_impurity_decrease - Only split if impurity reduction exceeds a threshold
+
+
+# Decision Tree for regression:-
+-> Decide which feature to split
+-> split our data into 2 parts
+-> repeat recursively
+-> mean/avg of leaf node data
+
+variance/mse ---> [Variance Reduction = Vr(parent) - Weighted Vr(children nodes)]
