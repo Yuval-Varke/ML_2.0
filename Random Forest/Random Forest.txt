@@ -1,0 +1,18 @@
+Random Forest - It is an ensemble learning technique used on decision trees. It can be used on 
+                both problems, classification and regression
+
+1. Data Sampling :
+                --- Row Sampling - bootstrap sampling with replacement
+                --- Column Sampling - feature sampling/feature bagging
+
+2. Bootstrap aggregation after model training.
+
+
+## Out of Bag (00B) :-
+It's a built-in validation method in bagging that lets us estimate model performance without a
+separate validation set.
+
+OOB Sample = As some data points are being selected repeatedly, Those datasets which are not being
+             chosen during the data sampling process.
+OOB Accuracy = The accuracy we get after using the OOB samples as our validation data.
+OOB Error = The error we get after using the OOB samples as our validation data.
