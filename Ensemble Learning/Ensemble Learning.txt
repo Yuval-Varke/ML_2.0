@@ -1,0 +1,20 @@
+#Ensemble Learning:-
+-> An ML technique that aggregates two or more learners in order to produce better predictions.
+-> Idea is to generate a strong learner with collectively using multiple weak learners.
+
+Ways to use weak models -  [Both can be used for both. classification and regression]
+a. Parallely (Bagging)
+b. Sequentially (Boosting)
+
+
+
+A. Bagging - It uses modified replicates of a given training data set to train multiple base learners, gen. with the same
+training algorithm.
+-> Data Sampling [Bootstrap sampling with Replacement]
+-> Model Training
+-> Aggregation - If classification, then majority voting
+               - If regression, then mean/avg
+ 
+B. Boosting - Each models sequentially tries to correct mistakes of the previous ones.
+-> Sequential Training
+-> Weight Adjustment
