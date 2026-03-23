@@ -23,3 +23,9 @@ Applying Kernels to transform our data into higher dimensional spaces is called 
 #Support Vector Machine SCR:- (For Regression)
 -> epsilon tube --- gives epsilon value
 -> error must be in the epsilon range
+
+
+
+#Linear SVR -- similar to SVR(kernel='linear')
+            -- less parameters, i.e, no kernel matrix
+            -- faster than SVR(kernel='linear')
