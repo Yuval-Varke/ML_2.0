@@ -1,4 +1,4 @@
-#Support Vector Machine:-
+#Support Vector Machine SCV:- (For Classification)
 -> Generally used for classification; though can be used for both binary classification and regression.
 -> Decision Boundary is created to classify different classes.
 -> Margin Hyperplane -- Equi-distant from the Decision Boundary line
@@ -17,3 +17,9 @@ Applying Kernels to transform our data into higher dimensional spaces is called 
 · Polynomial Kernel
 · RBF (Gaussian) Kernel
 · Sigmoid Kernel
+
+
+
+#Support Vector Machine SCR:- (For Regression)
+-> epsilon tube --- gives epsilon value
+-> error must be in the epsilon range
