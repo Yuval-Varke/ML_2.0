@@ -1,0 +1,19 @@
+#Support Vector Machine:-
+-> Generally used for classification; though can be used for both binary classification and regression.
+-> Decision Boundary is created to classify different classes.
+-> Margin Hyperplane -- Equi-distant from the Decision Boundary line
+                     -- Parallel of each other
+-> Distance between two margin hyperplane lines is called margin value
+
+-> For binary classification, we need margin value to be as large as possible
+-> Greater margin value, means classes will be clearly seperable
+
+Kernel in SVM -- Functions that maps data into a higher-dimensional space, allowing SVMs to find non-linear patterns and
+separate complex data that isn't linearly separable in its original space.
+Applying Kernels to transform our data into higher dimensional spaces is called Kernel Tricks.
+
+@Kernel in SVM :-
+· Linear Kernel
+· Polynomial Kernel
+· RBF (Gaussian) Kernel
+· Sigmoid Kernel
