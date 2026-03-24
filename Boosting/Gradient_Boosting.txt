@@ -6,3 +6,9 @@ Can be used for both - Regression and Classification
 3. Train a Decision Tree on (X,R)
 4. Therefore, Calculate new y_cap ==> pred1 = pred0 + (learning_rate).DT1
 5. Repeat steps 2,3,4
+
+@Classification
+1. Using a simple model (F0) use log odds
+2. Calculate Residuals R = (y - y_cap) for all samples
+3. Train a Decision Tree on (X,R)
+4. Predicted residuals -> probability(y_cap)
