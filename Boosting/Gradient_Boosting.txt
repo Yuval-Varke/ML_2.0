@@ -1,0 +1,8 @@
+Can be used for both - Regression and Classification
+
+@Regression:-
+1. Using a simple model (F0) - mean
+2. Calculate Residuals R = (y - y_cap) for all samples
+3. Train a Decision Tree on (X,R)
+4. Therefore, Calculate new y_cap ==> pred1 = pred0 + (learning_rate).DT1
+5. Repeat steps 2,3,4
