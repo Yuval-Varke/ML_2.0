@@ -1,0 +1,12 @@
+AdaBoost -:- Adaptive Boosting
+It can be used to solve both regression and classification problem
+
+1. Assign weights to sample, where wi = 1/N
+2. Weak learner (DT stump - a decision tree with single split)
+3. Calculate weighted error/Total error (denoted by epsilon1)
+4. Calculate stump importance/importance score/learner weight (denoted by alpha)
+5. Update sample weights accordingly: Incorrect predictions = weight increase
+                                      Correct predictions = weight decrease
+6. Normalize new weights
+7. Repeats entire process for a new weak learner with weighted data
+8. Final output --> weighted voting for final classifier
