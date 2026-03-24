@@ -1,0 +1,28 @@
+Other Algorithms:-
+
+@ XGBoost
+· Extreme Gradient Boosting
+· Optimized & scalable version of Gradient Boosting
+· Very accurate for competitions & real-world tasks
+· Sparsity aware - Handles sparse data well
+· Prevents overfitting through L1 & L2 regularization
+
+· Con - Can be slower to train on large datasets
+
+
+@ LightGBM
+· Light Gradient Boosting Machine
+· Uses less memory & swift computation
+· Histogram-based: Speeds up training by binning continuous features
+· Extremely fast on large datasets.
+
+· Con - Can overfit small datasets
+
+
+@ CatBoost
+· Categorical Boosting
+· Developed by Yandex. Optimized for categorical features
+· Automatically encodes categorical variables
+· Uses symmetric trees for balanced splits
+
+· Con - Slightly slower than LightGBM on large numeric-only datasets
