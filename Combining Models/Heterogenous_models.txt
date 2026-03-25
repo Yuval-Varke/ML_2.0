@@ -16,3 +16,10 @@ Can be used for both, regression and classification
     If classification = then majority vote (mode) is taken,
     If regression = then mean/avg is taken
 
+B. Stacking
+
+-> Multiple models like DT, SVC, Log reg., are trained on the same dataset
+-> These diff models gives diff predictions like P1,P2,P3,etc
+-> These predictions data is being passed to a Meta-Model which acts as a final judge and 
+   give us a final prediction 
+
