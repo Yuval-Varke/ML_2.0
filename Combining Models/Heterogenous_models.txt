@@ -23,3 +23,12 @@ B. Stacking
 -> These predictions data is being passed to a Meta-Model which acts as a final judge and 
    give us a final prediction 
 
+The problem with stacking is that it is prone to Overfitting, which can be resolved through :-
+1. K-Fold CV
+2. Blending -> At first, the dataset itself is divided into three parts - train data, validation data & test data
+            -> This 3-part divided dataset is being passed to diff models 
+            -> Now, all models are being trained on the train data part of the whole dataset
+            -> A Validation-meta-set is being created from the validation data part from the models
+            -> Also a Test-meta-set is being created from the test data part from the models
+            -> Now a Meta-Model is being trained on Validation-meta-set and is being tested on Test-meta-set
+            -> This gives us a final prediction
