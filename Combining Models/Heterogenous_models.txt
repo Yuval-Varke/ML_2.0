@@ -5,6 +5,14 @@ which were same, thats why they were known as Homogenous Ensemble models.
 
 Heterogenous Ensemble models uses multiple models, where all models are different.
 
+Heterogenous Ensemble model techniques:-
 
+A. Voting 
+Can be used for both, regression and classification
 
+-> Multiple models like DT, SVC, Log reg., are trained on the same dataset
+-> These diff models gives diff predictions like P1,P2,P3,etc
+-> On these predictions, the final result is evaluated on the basis of problem:
+    If classification = then majority vote (mode) is taken,
+    If regression = then mean/avg is taken
 
