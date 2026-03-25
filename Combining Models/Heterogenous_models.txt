@@ -1,0 +1,10 @@
+Uptill now we knew of these supervised machine learning models like linear regression, 
+logistic regression, DTs, SVMs,etc.
+In the ensemble learning techniques of Bagging and Boosting, multiple models were used,
+which were same, thats why they were known as Homogenous Ensemble models.
+
+Heterogenous Ensemble models uses multiple models, where all models are different.
+
+
+
+
