@@ -1,0 +1,32 @@
+Hierarchial Clustering :-
+-> Here, we dont have to specify the number of clusters before-hand
+-> There are no centroids in Hierarchial Clustering
+
+
+@ Types:-
+1. Agglomerative - (Bottom-Up)
+
+-> Start with each data point as its own cluster
+-> Compute distance between all clusters (Euclidean)
+-> Merge the two closest clusters
+-> Recompute distances between new clusters
+-> Repeat merging until:
+    Only one cluster remains (or desired clusters reached)
+
+
+2. Divisive - (Top-Down)
+
+-> Start with all data points in one cluster
+-> Compute dissimilarity within the cluster
+-> Split the cluster into two sub-clusters
+    (often using K-Means with k=2 or distance-based split)
+-> Choose the cluster with highest variance / dissimilarity
+-> Repeat splitting until:
+    Desired number of clusters is reached
+
+
+### How to decide number of clusters (k) - [Using Dendogram]
+    -> Plot a dendrogram (tree diagram)
+    -> Observe the largest vertical gap (distance jump)
+    -> Draw a horizontal cut at that gap (longest vertical line in Dendogram with now horizontal crossing)
+    -> Number of clusters formed at that cut = optimal k
