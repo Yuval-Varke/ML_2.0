@@ -1,0 +1,23 @@
+#Unsupervised learning :- It is a type of machine learning that analyzes unlabeled datasets to identify 
+hidden patterns, structures, or relationships without human guidance. 
+
+
+@Clustering problem: 
+It is an unsupervised ML technique that automatically groups similar, unlabeled data points into
+clusters based on defined similarity metrics.
+1. Partioning Based Clustering Algorithm - KMeans
+2. Hierarchial Clustering
+3. Density Based Clustering - DBSCAN
+
+
+KMeans Clustering:- 
+-> Choose/Set K (where K is the number of clusters)
+-> Randomly initialize K centroids (A centroid is present at the mean position of all points in a cluster)
+-> For all the points, minimum distance from the point and all centroids is calculated,
+   i.e, min(dist(pt,all centroid))
+   To calculate this distance, formulas can be used:
+                              a. Euclidean Formula
+                              b. Manhattan Formula
+-> The centroids are assigned to the closest distance point
+-> Above two Steps are repeated
+-> New centroid point will be at the mean position of all points in a cluster
