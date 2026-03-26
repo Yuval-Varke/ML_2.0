@@ -1,0 +1,47 @@
+KMeans Clustering:- 
+-> Choose/Set K (where K is the number of clusters)
+-> Randomly initialize K centroids (A centroid is present at the mean position of all points in a cluster)
+-> For all the points, minimum distance from the point and all centroids is calculated,
+   i.e, min(dist(pt,all centroid))
+   To calculate this distance, formulas can be used:
+                              a. Euclidean Formula
+                              b. Manhattan Formula
+-> The centroids are assigned to the closest distance point
+-> Above two Steps are repeated
+-> New centroid point will be at the mean position of all points in a cluster
+
+
+
+### How to choose K in KMeans Clustering ?
+Sometimes we already know/judge the value of K, by looking at the dataset, or by having the knowledge of
+dataset. But not everytime, thus we use some techniques to find the best value of K :
+
+1. Elbow method - WCSS (Within Cluster Sum of Squares)
+
+-> Choose a range of k values (e.g., 1 to 10)
+-> For each k:
+    Run K-Means clustering
+    Compute WCSS (Within-Cluster Sum of Squares)
+-> Plot:
+    x-axis → k
+    y-axis → WCSS
+-> Observe the curve:
+    WCSS decreases as k increases
+-> Find the “elbow point”: Where the drop in WCSS starts slowing down sharply
+-> That k is considered the optimal number of clusters
+
+
+2. Silhoutte method - range(-1,1)
+
+-> Choose a range of k values (e.g., 2 to 10)
+-> For each k:
+    Run K-Means clustering
+    Compute silhouette score for all points
+-> Silhouette score for a point:
+    Compare intra-cluster distance (a) vs nearest-cluster distance (b)
+    Score = (b - a) / max(a, b)
+-> Calculate average silhouette score for each k
+-> Plot:
+    x-axis → k
+    y-axis → silhouette score
+-> Select k with highest silhouette score
