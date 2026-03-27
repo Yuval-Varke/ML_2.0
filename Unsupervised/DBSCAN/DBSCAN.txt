@@ -1,0 +1,21 @@
+DBSCAN - Density-Based Spatial Clustering of Applications with Noise
+It is best for anomaly/outliers detection and non-linear clusters
+
+
+-> Choose ε (radius) and min_samples
+-> Pick any point that hasn’t been visited yet
+-> Look at all points within ε distance of it
+-> If it has enough neighbors (≥ min_samples) → it becomes a core point and starts a new cluster
+-> Add all its nearby points to this cluster
+-> For each nearby point:
+-> If it is also a core point, expand the cluster further from it
+-> Keep adding reachable points (this grows the cluster)
+-> If a point has fewer neighbors, but is close to a core point → mark it as a border point and include it in the cluster
+-> If a point is not close to any core point → mark it as noise
+-> Repeat this process until all points are checked
+
+## How to choose epsilon and min_samples:
+-> Set min_samples = 4 or 5
+-> Plot k-distance graph
+-> Pick ε from the elbow
+-> Adjust slightly based on results
