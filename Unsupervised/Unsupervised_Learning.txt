@@ -56,3 +56,14 @@ A. DBSCAN for Anomaly Detection:
 
 Idea: points not fitting in any cluster are outliers.
 
+B. Isolation Forest for Anomaly Detection:
+-> Build many random trees
+-> Randomly split data (features + values)
+-> Points that get isolated faster (few splits) → anomalies
+-> Points needing more splits → normal
+
+Output:
+Anomaly score
+Points with high anomaly score = outliers
+
+Idea: anomalies are rare → easy to isolate quickly.
