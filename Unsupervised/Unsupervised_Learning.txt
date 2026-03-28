@@ -8,3 +8,21 @@ clusters based on defined similarity metrics.
 1. Partioning Based Clustering Algorithm - KMeans
 2. Hierarchial Clustering
 3. Density Based Clustering - DBSCAN
+
+
+
+
+
+
+@Curse of Dimensionality:-
+1. Data Sparsity - As the dimensions increases, data sparses exponentially
+2. Distance becomes meaningless
+3. Expensive computations
+4. Performance of models starts decreasing as the data sparses
+
+# Dimensionality Reduction:--
+1. Feature Selection - remove redundant features or keep important features
+2. Feature Transformation - PCA - multiple features are as a single feature, which becomes principal component
+3. NaiveBayes, Linear regression with regularization
+
+
