@@ -42,8 +42,17 @@ To combine two features f1 and f2, a graph is plotted for both features, then we
 7. Again projection of data points are taken at PC2
 8. Axis shifts to PC1 vs PC2 from x vs y
 
-# PCA Steps:
-1. Standardize our data (z-score normalization)
-2. Compute the covariance matrix (how much f1 and f2 varies with each other)
-3. Compute the best fit line --> gives us Eigen vector and Eigen values
-4. 
+
+
+@Anomaly Detection: 
+Outliers - are those data points which represents extreme data points
+Anomaly - Unusual or Suspicious data points
+
+A. DBSCAN for Anomaly Detection:
+-> Set eps and min_samples
+-> Run DBSCAN
+-> Data gets split into clusters + noise
+-> Points marked as noise (-1) = anomalies
+
+Idea: points not fitting in any cluster are outliers.
+
