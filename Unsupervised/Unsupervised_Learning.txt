@@ -67,3 +67,15 @@ Anomaly score
 Points with high anomaly score = outliers
 
 Idea: anomalies are rare → easy to isolate quickly.
+
+C. LOF (Local Outlier Factor) — simple steps:
+-> Choose k (number of neighbors)
+-> For each point, find its k-nearest neighbors
+-> Compute local density of each point
+-> Compare its density with neighbors
+
+Result:
+Much lower density than neighbors → anomaly
+Similar density → normal
+
+Idea: anomalies are points that are less dense than their surroundings.
