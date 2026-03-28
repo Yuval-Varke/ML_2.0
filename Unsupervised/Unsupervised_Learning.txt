@@ -26,3 +26,24 @@ clusters based on defined similarity metrics.
 3. NaiveBayes, Linear regression with regularization
 
 
+## PCA - Principal Component Analysis :-
+Works best on correlated data
+Pearson correlation coefficient (r) is used to show the relation between correlated data
+
+To combine two features f1 and f2, a graph is plotted for both features, then we:
+1. Spread of Data - on both axes
+2. Calculate mean - then centre the whole data around that mean, and mean is at origin
+3. Try to create a best fit line which passes through the mean/origin
+4. Two values are calculated - Eigen vector and Eigen values
+5. The projections at that line is the combination of features f1 and f2; that line will be called as 
+   PC1 (having max spread,max info)
+
+6. Another line is created perpedicular of PC1, named as PC2
+7. Again projection of data points are taken at PC2
+8. Axis shifts to PC1 vs PC2 from x vs y
+
+# PCA Steps:
+1. Standardize our data (z-score normalization)
+2. Compute the covariance matrix (how much f1 and f2 varies with each other)
+3. Compute the best fit line --> gives us Eigen vector and Eigen values
+4. 
