@@ -46,3 +46,10 @@ Cross Entropy (CE) -- a. Binary CE --- Nothing but, it's log loss
 -> Repeat for many iterations (epochs) until error reduces
 
 
+# Vanishing Gradient problem in NN : 
+-> The vanishing gradient problem occurs in deep neural networks when gradients used for weight 
+   updates become extremely small during backpropagation. As these gradients are multiplied backward, they tend towards 
+   zero, causing early layers to stop learning. This results in slow convergence, training instability, and poor performance, 
+   particularly in deep networks. 
+-> To solve the vanishing gradient problem in deep neural networks, use activation functions like ReLU, apply weight 
+   initialization techniques (Xavier/He), and use Batch Normalization.
