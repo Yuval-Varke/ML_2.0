@@ -53,3 +53,19 @@ Cross Entropy (CE) -- a. Binary CE --- Nothing but, it's log loss
    particularly in deep networks. 
 -> To solve the vanishing gradient problem in deep neural networks, use activation functions like ReLU, apply weight 
    initialization techniques (Xavier/He), and use Batch Normalization.
+
+   A. ReLU (Rectified Linear Unit)
+                                       f(x)=max(0,x)
+      Outputs 0 for negative inputs, and 𝑥 for positive inputs; simple and fast, but can cause “dead neurons” (always 0)
+
+   B. Leaky ReLU
+                                       f(x)=x if x>0,αx if x≤0
+      Allows a small slope (e.g., 𝛼 = 0.01) for negative values to avoid dead neurons
+
+   C. Parametric ReLU (PReLU)
+      Same as Leaky ReLU, but 𝛼 is learned during training instead of fixed
+      Gives the model flexibility to choose the best negative slope
+
+   D. ELU (Exponential Linear Unit)
+                                       f(x)=x if x>0,α(ex−1) if x≤0
+      Smooth curve for negative values, helps faster learning and better convergence
