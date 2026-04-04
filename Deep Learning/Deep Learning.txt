@@ -44,3 +44,5 @@ Cross Entropy (CE) -- a. Binary CE --- Nothing but, it's log loss
 -> Update biases:
                 b=b−η⋅∂b/∂L​
 -> Repeat for many iterations (epochs) until error reduces
+
+
