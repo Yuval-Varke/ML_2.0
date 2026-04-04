@@ -1,0 +1,22 @@
+# Perceptron:- Very basic neuron
+
+* A perceptron is a single neuron model that takes inputs, assigns weights, and adds a bias
+* It multiplies inputs with weights, sums them, and passes the result through an activation function
+* The activation function (like a step function) decides the final output (0 or 1)
+* During training, it adjusts weights based on errors to improve predictions
+* It can only solve simple, linearly separable problems (not complex ones like XOR)
+
+# what is Forward and Backward propogation ?
+Forward propagation:-
+* Data moves from input → hidden layers → output
+* Each layer computes weighted sums + activation
+* Produces the final prediction
+
+Backward propagation (backpropagation):-
+* Compares prediction with actual answer to get error
+* Sends this error backward through the network
+* Updates weights using gradients to reduce error
+
+In short
+* Forward = make prediction
+* Backward = learn from mistakes and adjust weights
