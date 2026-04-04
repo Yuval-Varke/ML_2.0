@@ -27,3 +27,9 @@ Loss Functions:
 For Regression -- 1. MSE - Easily differentiable && Have only 1 global minima | but it's sensitive to outliers
                   2. MAE - Less sensitive to outliers | but it doesn't have a smooth gradient
                   3. HuberLoss - Combination of MSE[for small errors] & MAE[for large erros] && performs better on outliers
+                
+For Classification -- 
+Cross Entropy (CE) -- a. Binary CE --- Nothing but, it's log loss 
+                                   --- Activation function used in hidden layers is RelU and at final o/p layer is Sigmoid 
+                      b. Categorical CE --- o/p layers neurons = number of classes
+                                        --- Activation function used in hidden layers is RelU and at final o/p layer is SoftMax 
