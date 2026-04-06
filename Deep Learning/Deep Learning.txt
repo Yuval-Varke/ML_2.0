@@ -69,3 +69,16 @@ Cross Entropy (CE) -- a. Binary CE --- Nothing but, it's log loss
    D. ELU (Exponential Linear Unit)
                                        f(x)=x if x>0,α(ex−1) if x≤0
       Smooth curve for negative values, helps faster learning and better convergence
+   
+# Batch vs Iteration vs Epoch
+
+Total dataset = 1000 samples
+Batch 
+- Subset of the Training Data 
+- 10 Batches each of 100 samples
+Iteration 
+- 1FP + 1BP on 1 batch 
+- 10 iterations for 10 Batches
+Epoch 
+- When our neural network has seen the entire training data 
+- 1 Epoch = 10 iterations
