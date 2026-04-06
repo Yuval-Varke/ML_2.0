@@ -70,9 +70,9 @@ Cross Entropy (CE) -- a. Binary CE --- Nothing but, it's log loss
                                        f(x)=x if x>0,α(ex−1) if x≤0
       Smooth curve for negative values, helps faster learning and better convergence
    
-# Batch vs Iteration vs Epoch
-
+# Batch vs Iteration vs Epoch:
 Total dataset = 1000 samples
+
 Batch 
 - Subset of the Training Data 
 - 10 Batches each of 100 samples
@@ -82,3 +82,38 @@ Iteration
 Epoch 
 - When our neural network has seen the entire training data 
 - 1 Epoch = 10 iterations
+
+
+# Optimizers:
+Algorithms that updates the weights and biases to minimize the loss function
+
+Gradient Descent (GD) - Updates weights using the full dataset each step; stable but slow for large data
+
+Types of Gradient Descent:-
+1. Batch GD: uses entire dataset 
+   → accurate but very slow [1 epoch = 1 iteration]
+2. Stochastic GD (SGD): updates per data point 
+   → fast but noisy [1 epoch = n iteration]
+3. Mini-batch GD: uses small batches 
+   → balance of speed and stability (most common)
+4. GD with momentum
+   → Adds a “velocity” term so updates keep moving in the same direction, reducing zig-zag and speeding up convergence
+   → Velocity update : v=βv+η⋅∂w/∂L
+   → Weight update : w=w−v
+   → Key parameter : β (momentum term, e.g., 0.9) controls how much past gradients influence the update
+   → Speeds up learning in consistent directions and smooths noisy updates
+   → Momentum = gradient descent + memory of past updates for faster, smoother convergence​
+5. RMS Prop
+   → Adapts the learning rate for each parameter using a moving average of squared gradients
+   → Running average of squared gradients : s=βs+(1−β)(∂w/∂L​)^2
+   → Weight update : w=w−η/root(s​+ϵ)​⋅∂w/∂L
+   → Key parameters : β (decay rate, ~0.9), 𝜖 (small value to avoid division by zero)
+   → Prevents learning rate from shrinking too much (fixes AdaGrad issue) and stabilizes updates
+   → RMSProp = adaptive learning rate using recent gradient magnitudes for faster, stable training
+6. ADAM
+   → Combines Momentum (first moment) + RMSProp (second moment) for adaptive and smooth updates
+   → First moment (mean of gradients) : m=β1​m+(1−β1​)∂w/∂L
+   → Second moment (mean of squared gradients) : v=β2​v+(1−β2​)(∂w/∂L​)^2
+   → Bias correction and Weight Updation 
+   → Fast convergence, handles noisy gradients, works well in most cases
+   → Adam = momentum + adaptive learning rates → efficient and widely used optimizer
