@@ -50,4 +50,29 @@ Input Image
 [ Output (Softmax) ]
 
 
+1. Convolutional Layer
+-> Min–max scaling (preprocessing) : Convert pixel values to a smaller range (usually 0 to 1) so training is stable
+-> Filter (kernel) : A small matrix (like 2×2 or 3×3) that moves across the image and detects patterns
+-> Padding (types) : Valid: no padding → output becomes smaller
+                  Same: add zeros around edges → output size stays same
+-> Feature map (output) : At each position, multiply filter values with the image region and add them → gives a new 
+                       matrix highlighting features
+-> ReLU activation : Replace all negative values with 0, keep positive values as they are
 
+Simple example:---
+Input:
+1  2  0
+0  1  3
+2  2  1
+
+Kernel:
+1  0
+0 -1
+
+After applying kernel → feature map:
+0  -1
+1   0
+
+After ReLU:
+0  0
+1  0
