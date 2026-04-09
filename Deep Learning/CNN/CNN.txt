@@ -1,0 +1,20 @@
+# Convolutional Neural Network:
+
+* CNN is a neural network mainly used for images and spatial data
+* It uses filters (kernels) to scan the input and detect features like edges and patterns
+* After convolution, an activation function (like ReLU) introduces non-linearity
+* Pooling reduces the size of feature maps while keeping important information
+* The output is flattened and passed to fully connected layers for final prediction
+* It learns features automatically from simple (edges) to complex (objects)
+
+How Computer Vision works ?
+-> Computer vision enables machines to understand images/videos by converting them into numerical data 
+  (pixels → arrays)
+-> It processes this data using algorithms or neural networks (especially CNNs) to extract features like 
+  edges, shapes, textures
+-> Low-level features combine into higher-level patterns (objects, faces, scenes)
+-> Models are trained on large datasets to learn patterns and make predictions
+-> During inference, the trained model analyzes new images and identifies or classifies what it sees
+-> Used in tasks like image classification, object detection, segmentation, and recognition
+
+
