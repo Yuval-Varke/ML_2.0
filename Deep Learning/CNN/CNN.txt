@@ -50,6 +50,9 @@ Input Image
 [ Output (Softmax) ]
 
 
+-----------------------------------------------------------------------------------
+
+
 1. Convolutional Layer
 -> Min–max scaling (preprocessing) : Convert pixel values to a smaller range (usually 0 to 1) so training is stable
 -> Filter (kernel) : A small matrix (like 2×2 or 3×3) that moves across the image and detects patterns
@@ -76,3 +79,35 @@ After applying kernel → feature map:
 After ReLU:
 0  0
 1  0
+
+-----------------------------------------------------------------------------------
+
+
+2. Pooling Layer
+-> A pooling layer is used for downsampling, meaning it reduces the spatial size (height and width) of feature 
+   maps while keeping the most important information.
+It works by dividing the input into small regions (like 2×2) and summarizing each region into a single value.
+-> Purpose : Reduces computation and memory usage
+          Helps control overfitting
+          Keeps important features while discarding less useful details
+
+Types of Pooling:-
+-> Max Pooling : Selects the largest value from each region.
+                 Most commonly used because it keeps the strongest features.
+-> Average Pooling : Takes the average of values in each region.
+                     Produces smoother feature maps but may lose sharp features.
+-> Min Pooling : Selects the smallest value.
+                 Rarely used in practice.
+
+Example (Max Pooling with 2×2 window)
+Input:
+1  3  2  1
+4  6  5  2
+7  2  8  3
+1  2  0  4
+
+Step: Take max from each 2×2 block
+
+Output:
+6  5
+7  8
