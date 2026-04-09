@@ -111,3 +111,26 @@ Step: Take max from each 2×2 block
 Output:
 6  5
 7  8
+
+-----------------------------------------------------------------------------------
+
+3. Fully Connected Layer
+-> After convolution and pooling, the feature maps are flattened into a single long vector (matrix → 1D array)
+-> This vector is passed to a fully connected (dense) neural network, where every neuron is connected to all inputs
+-> The dense layers learn high-level combinations of features to make decisions
+-> Final layer produces the classification output (e.g., class probabilities using Softmax)
+
+Flow : Feature Maps → Flatten → Fully Connected Layers → Output (Class Prediction)
+[https://www.dragon1.com/images/convolutional-neural-networks-cnns.png]
+
+
+Example:
+Feature map:
+1  2
+3  4
+
+Flatten:
+[1, 2, 3, 4]
+
+Passed through ANN → Output:
+[0.1, 0.9]  → Class 2
