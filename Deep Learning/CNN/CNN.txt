@@ -18,3 +18,36 @@ How Computer Vision works ?
 -> Used in tasks like image classification, object detection, segmentation, and recognition
 
 
+Simple diagram of architecture of CNN : [https://images.openai.com/static-rsc-4/F2AoJsZDFtvPnEE8bZlojQ5JCNq3n1xf5tD2eGRCE0cgSolkV6N9IZFhF2eo5cBxzfn4s_QujxcJTeKQsIlUJanxS4v6L9s7w4ZgpgAYpHyeknWcnTIizW3doCiY-r3I5GQu-7kcBdUbKTXGZ4cJxe3gG-b4vsagQUbuH09yYzICSj-oO97wXz8FpB2gaq0Q?purpose=fullsize]
+
+Input Image
+     │
+     ▼
+[ Convolution Layer ]
+     │
+     ▼
+[ ReLU Activation ]
+     │
+     ▼
+[ Pooling Layer ]
+     │
+     ▼
+[ Convolution Layer ]
+     │
+     ▼
+[ ReLU Activation ]
+     │
+     ▼
+[ Pooling Layer ]
+     │
+     ▼
+[ Flatten ]
+     │
+     ▼
+[ Fully Connected Layer ]
+     │
+     ▼
+[ Output (Softmax) ]
+
+
+
