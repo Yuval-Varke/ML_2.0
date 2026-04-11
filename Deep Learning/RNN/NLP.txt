@@ -1,4 +1,4 @@
-Natural Language Processing (NLP)
+# Natural Language Processing (NLP)
 * NLP is a field of AI that enables computers to understand, process, and generate human language (text or speech)
 * Text is first converted into a numerical form (like tokens, vectors, or embeddings) so models can process it
 * Models learn patterns in language such as grammar, meaning, and context using machine learning or deep learning
@@ -6,7 +6,7 @@ Natural Language Processing (NLP)
 * Modern NLP uses deep learning models (like RNNs, LSTMs, and Transformers) for better context understanding
 
 
-Text Processing in NLP:-
+== Text Processing in NLP:-
 -> Lowercasing : Convert all text to lowercase to avoid duplicates (e.g., “Apple” vs “apple”)
 -> Tokenization : Split text into smaller units like words or sentences
 -> Removing noise : Remove punctuation, special characters, numbers (if not useful)
@@ -17,3 +17,30 @@ Text Processing in NLP:-
 
 In short : Raw text → Clean → Break into tokens → Normalize → Convert to numbers for model input
 
+
+
+== Advanced Text Processing in NLP
+
+1. Named Entity Recognition (NER) :-
+-> Identifies and classifies key entities in text
+-> Examples: person names, locations, organizations, dates
+-> Output is structured labels for each token
+-> Example: “Elon Musk lives in USA” → Elon Musk (Person), USA (Location)
+
+2. Word Embeddings (Word2Vec) :-
+-> Converts words into dense vectors (numbers) that capture meaning and context
+-> Similar words have similar vectors (e.g., king ≈ queen, dog ≈ cat)
+-> Learned using neural networks based on surrounding words
+Two main approaches:
+                    CBOW (Continuous Bag of Words): predict a word from context
+                    Skip-gram: predict context from a word
+
+3. Vocabulary Building :-
+-> Create a mapping of all unique words (tokens) in the dataset
+-> Assign each word a unique index (word → number)
+-> May limit vocabulary size (top frequent words) to reduce complexity
+-> Handle unknown words using a special token like <UNK>
+
+In short : NER = extract important entities
+           Embeddings = represent meaning numerically
+           Vocabulary = map words to indices for model input
