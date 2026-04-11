@@ -1,0 +1,19 @@
+Natural Language Processing (NLP)
+* NLP is a field of AI that enables computers to understand, process, and generate human language (text or speech)
+* Text is first converted into a numerical form (like tokens, vectors, or embeddings) so models can process it
+* Models learn patterns in language such as grammar, meaning, and context using machine learning or deep learning
+* Tasks include text classification, sentiment analysis, translation, question answering, and chatbots
+* Modern NLP uses deep learning models (like RNNs, LSTMs, and Transformers) for better context understanding
+
+
+Text Processing in NLP:-
+-> Lowercasing : Convert all text to lowercase to avoid duplicates (e.g., “Apple” vs “apple”)
+-> Tokenization : Split text into smaller units like words or sentences
+-> Removing noise : Remove punctuation, special characters, numbers (if not useful)
+-> Stopword removal : Remove common words like “the”, “is”, “and” that don’t add much meaning
+-> Stemming : Reduce words to root form (e.g., “playing” → “play”)
+-> Lemmatization : Convert words to meaningful base form (e.g., “better” → “good”)
+-> Vectorization / Encoding : Convert text into numbers (Bag of Words, TF-IDF, embeddings)
+
+In short : Raw text → Clean → Break into tokens → Normalize → Convert to numbers for model input
+
