@@ -44,3 +44,20 @@ Two main approaches:
 In short : NER = extract important entities
            Embeddings = represent meaning numerically
            Vocabulary = map words to indices for model input
+
+
+== TF-IDF:-
+TF-IDF is a way to figure out how important a word is in a document compared to a 
+whole collection of documents.
+-> Term Frequency (TF) tells you how often a word appears in a single document. 
+    If a word shows up many times, it’s probably important for that document.
+    TF = word count / total number of words
+-> Inverse Document Frequency (IDF) reduces the importance of words that appear in many documents. 
+    Words like “the” or “is” appear everywhere, so they aren’t useful for distinguishing documents.
+    IDF = log(total number of documents / docs with our word)
+-> When you multiply TF and IDF, you get the TF-IDF score:
+            A word gets a high score if it appears often in one document but not in many others.
+            A word gets a low score if it’s common across all documents.
+
+    TF-IDF = TF * IDF
+
