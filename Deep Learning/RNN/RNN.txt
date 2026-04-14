@@ -82,3 +82,40 @@ Encoder:   x1 ─► h1 ─► h2 ─► h3
 Decoder:            y1 ─► y2 ─► y3 ─► y4
 Encoder compresses input into context
 Decoder generates output sequence
+
+
+
+== Backpropogration:-
+
+🔹 Setup (Many-to-One)
+Input: sequence of words x1,x2,x3.....xT
+Output: single label (e.g., positive/negative)
+Forward flow:
+x1 → h1
+x2 → h2
+x3 → h3 → ... → hT → y
+Only the last hidden state hT is used for prediction.
+
+
+🔹Forward Pass
+Hidden states:
+            ht = f(Wh.ht-1 + Wx.xt + b)
+
+Output:
+            y = softmax(WyhT)
+
+Loss (for classification):
+            L = CrossEntropy(y, ytrue)
+
+
+🔹 Backpropagation Through Time (BPTT)
+Key idea:
+Since each hT depends on previous states, gradients must flow backward through all time steps.
+
+
+🔹 Intuition (Sentiment Example)
+Sentence: "The movie was not good"
+    Early words (“movie”, “not”) influence final sentiment
+    During BPTT:
+        Error from final prediction flows back
+        Adjusts weights so earlier words matter correctly
