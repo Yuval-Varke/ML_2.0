@@ -1,0 +1,34 @@
+== RNN Architecture:-
+-> An RNN is designed to handle sequential data (like text, time series) by maintaining a memory of previous inputs.
+-> Instead of processing inputs independently, an RNN processes them step-by-step, carrying information forward using a hidden state.
+An RNN processes sequences step by step. At each time step t, it takes:
+    current input --- xt
+    previous hidden state --- ht-1
+and produces:
+    new hidden state  --- ht
+    optionally an output --- yt
+
+
+
+-> Hidden state at time t : It acts like memory of past inputs.
+    ht​=f(Wh.​ht−1 ​+ Wx.​xt​ + b)
+
+ht−1: carries past information
+xt: : current input
+f: activation (tanh / ReLU)
+
+So, 
+ht = past + present combined
+
+
+
+-> Parameter sharing : Same weights are reused at every time step:
+                       Wx, Wh, b stay constant
+
+This is what makes RNNs:
+    efficient (fewer parameters)
+    able to handle variable-length sequences
+
+
+Problems:- Vanishing / exploding gradients. Hard to learn long-term dependencies
+           solved using LSTM / GRU (improved RNNs)
