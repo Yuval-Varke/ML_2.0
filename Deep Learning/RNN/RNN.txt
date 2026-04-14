@@ -32,3 +32,53 @@ This is what makes RNNs:
 
 Problems:- Vanishing / exploding gradients. Hard to learn long-term dependencies
            solved using LSTM / GRU (improved RNNs)
+
+
+======================================================================================================
+
+== Types of RNN Architecture:- 
+
+🔹 1. One-to-One (Simple NN, not really RNN)
+Used for basic tasks (like classification).
+Example: Image classification
+
+x ───► y
+No sequence involved
+Just standard neural network
+
+🔹 2. One-to-Many
+Single input → sequence output
+Example: Image captioning / Video or Movie Recommendation
+
+x ───► h ───► y1 ─► y2 ─► y3
+One input generates multiple outputs over time
+
+🔹 3. Many-to-One
+Sequence input → single output
+Example: Sentiment analysis
+
+x1 ─► h1
+x2 ─► h2
+x3 ─► h3 ───► y
+Final hidden state used for prediction
+
+🔹 4. Many-to-Many (Same length)
+Input and output sequences are aligned
+Example: (Part of Speech) POS tagging
+
+x1 ─► h1 ─► y1
+x2 ─► h2 ─► y2
+x3 ─► h3 ─► y3
+Output at each time step
+
+
+🔹 5. Many-to-Many (Different lengths / Seq2Seq)
+Input sequence → different-length output
+Example: Language translation
+
+Encoder:   x1 ─► h1 ─► h2 ─► h3
+                         │
+                         ▼
+Decoder:            y1 ─► y2 ─► y3 ─► y4
+Encoder compresses input into context
+Decoder generates output sequence
