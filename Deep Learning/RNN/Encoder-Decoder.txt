@@ -1,0 +1,49 @@
+== Encoder–Decoder Architecture (Seq2Seq)
+
+🔹 What it is
+A model used to convert one sequence into another.
+Common in tasks like:
+    machine translation
+    summarization
+    speech → text
+
+
+🔹 Basic Idea - Encoder reads the input sequence and compresses it into a representation. Decoder 
+                 uses that representation to generate the output sequence
+
+🔹 Architecture Flow
+Input:   x1 → x2 → x3 → ... → xT
+             (Encoder)
+                 ↓
+           Context vector (C)
+                 ↓
+             (Decoder)
+Output:  y1 → y2 → y3 → ... → yN
+
+
+🔹 Encoder
+Usually an RNN / LSTM / GRU
+Processes input step-by-step:
+                            ht= f(ht-1,xt)
+Final hidden state becomes context vector C
+C summarizes the entire input sequence
+
+
+🔹 Decoder
+Takes context vector C as input
+Generates output sequence one step at a time:
+                                            ht= f(ht-1,yt-1,C)
+Predicts next word based on:
+    previous output
+    context
+
+
+🔹 Intuition
+Encoder = “understand input”
+Decoder = “generate output using that understanding”
+
+
+🔹 Summary
+Converts sequence → sequence
+Two parts: encoder + decoder
+Limitation: fixed context → solved by attention
