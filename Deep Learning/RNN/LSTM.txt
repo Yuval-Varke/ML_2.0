@@ -1,0 +1,34 @@
+LSTM (Long Short-Term Memory)
+
+🔹 Why LSTM is used
+-> LSTM is designed to handle long-term dependencies in sequences.
+-> In many tasks (like sentiment analysis or language modeling), early inputs matter later
+-> Standard RNNs struggle to “remember” information over long sequences
+-> LSTM introduces a structured memory to fix this
+
+
+🔹 What RNN fails at -- 
+Vanishing / Exploding Gradients:
+During backpropagation, gradients shrink or grow exponentially
+Result:
+Early information gets forgotten (vanishing)
+Training becomes unstable (exploding)
+
+Effect in practice:
+RNN forgets words far back in a sentence
+Example:
+“The movie was not … good” → RNN may miss “not”
+
+
+🔹 Key Intuition
+Forget gate → removes irrelevant info
+Input gate → adds useful info
+Output gate → decides what to show
+
+
+🔹 Summary
+RNN fails due to vanishing gradients and short memory
+LSTM introduces:
+cell state (long-term memory)
+gates (control flow of information)
+Result: learns long-range dependencies effectively
