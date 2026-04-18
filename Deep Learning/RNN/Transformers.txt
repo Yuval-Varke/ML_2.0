@@ -1,0 +1,33 @@
+== Transformers:-
+
+🔹 What they are
+A neural network architecture for sequence tasks that removes recurrence (no RNN) and relies entirely on attention.
+
+Used in:
+        translation
+        text generation (LLMs)
+        summarization
+
+
+
+🔹 Core Idea: Attention : Instead of processing step-by-step, transformers look at all words at once 
+and learn which words are important to each other.
+
+
+
+🔹 Self-Attention (main concept)
+Each word interacts with every other word in the sentence.
+
+For each word:
+
+            Query (Q) → what am I looking for
+            Key (K) → what do I contain
+            Value (V) → actual information
+Attention score:
+                Attention(Q,K,V) = softmax(Q * K^T / root(dk)) * V
+
+This decides how much focus to give to other words
+
+
+
+
