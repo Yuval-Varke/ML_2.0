@@ -67,4 +67,22 @@ Since no sequence order is inherent:
 
 
 
+🔹 Flow (high level)
+Input → Embedding + Positional Encoding
+      → Encoder (attention layers)
+      → Decoder (generates output step-by-step)
+      → Output
 
+
+
+
+🔹 Key Intuition:
+        RNN = reads one word at a time
+        Transformer = looks at entire sentence at once and decides relationships
+
+
+
+🔹 Summary:
+        Built on attention, not recurrence
+        Faster + better for long sequences
+        Backbone of modern NLP (BERT, GPT, etc.)
