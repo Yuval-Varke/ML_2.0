@@ -30,4 +30,41 @@ This decides how much focus to give to other words
 
 
 
+🔹 Why better than RNN/LSTM
+                No sequential processing → parallel computation (fast)
+                Captures long-range dependencies easily
+                No vanishing gradient issue like RNN
+
+
+
+
+🔹 Transformer Architecture
+Two main parts:
+1. Encoder
+            Stack of identical layers
+            Each layer has:
+                            Multi-head self-attention
+                            Feed-forward network
+2. Decoder
+Similar to encoder but:
+            Uses masked attention (can’t see future words)
+            Has encoder-decoder attention
+
+
+
+🔹 Multi-Head Attention
+            Instead of one attention, use multiple in parallel
+            Each head learns different relationships
+
+
+
+
+🔹 Positional Encoding:-
+Since no sequence order is inherent:
+            Add position information to input embeddings
+            Helps model understand word order
+
+
+
+
 
